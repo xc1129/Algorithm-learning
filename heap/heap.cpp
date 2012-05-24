@@ -15,7 +15,8 @@ void build_max_heap(int *a);
 int main()
 {
 
-    int a[10]={16,4,10,14,7,9,3,2,8,1};
+    int a[]={16,4,10,14,7,9,3,2,8,1};
+    cout<<"caonimabi  "<<size_a(a)<<endl;
     build_max_heap(a);
     for(int i=0;i<10;i++)
         cout<<a[i]<<endl;
@@ -44,7 +45,6 @@ void max_heapify(int *a,int i)
     
     if(largest!=i)
     {
-        cout<<largest<<" ";
         int temp=a[i];
         a[i]=a[largest];
         a[largest]=temp;
@@ -58,4 +58,9 @@ void build_max_heap(int *a)
     {
         max_heapify(a,i);
     }
+}
+
+void heap_sort(int *a)
+{
+
 }
