@@ -1,14 +1,19 @@
 #ifndef inordertree
 #define inordertree
 
-#include <iostrem>
-using namespace std;
+struct treeNode
+{
+    int data;
+    treeNode *left;
+    treeNode *right;
+    treeNode *parent;
+};
 
 class inordertree
 {
     public:
-        inordertree();
-        ~inordertree();
+
     private:
 }
+
 #endif
