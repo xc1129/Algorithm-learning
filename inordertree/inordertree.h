@@ -24,6 +24,6 @@ class inordertree
         void createTree() const;
     private:
         treeNode<T> *root;
-}
+};
 
 #endif
